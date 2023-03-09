@@ -34,6 +34,12 @@ $db = new PDO('mysql:host=172.31.22.43;dbname=Kalem1185287', 'Kalem1185287', 'Us
       echo '<option value="' . $value['serviceId'] . '" >' .$value['name'] . '</option>';
   }
 
+
+  echo 
+
+  '<a href="shows.php?serviceId=' . $services['serviceId'] .'" title="Edit">';
+ 
+
   //disconect from the database
   $db = null;
 
@@ -42,7 +48,7 @@ $db = new PDO('mysql:host=172.31.22.43;dbname=Kalem1185287', 'Kalem1185287', 'Us
 
 </select>
 </fieldset>
-<button class="btnOffset">Get Shows</button>
+<button class="btnOffset">Submit</button>
     </form>
 </main>
 </body>
